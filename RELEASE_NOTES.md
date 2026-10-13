@@ -1,6 +1,6 @@
 # 譯聲 Live 0.7.24｜Windows x64 乾淨分享版
 
-完整離線辨識／翻譯模型已隨附。作者：Keith Tseng。
+完整離線辨識／翻譯模型已隨附。作者：<span translate="no" class="notranslate">Keith Tseng</span>。
 
 ## 程式介紹與功能
 
