@@ -7,6 +7,22 @@
 
 **目前發布：0.7.24 乾淨分享版。**這個儲存庫提供執行版下載與使用說明，並未發布本專案完整原始碼。
 
+## 操作介面
+
+### 即時雙語翻譯
+
+顯示原文與譯文，可選擇接收語言、音訊來源及透明字幕。
+
+![即時雙語翻譯介面示範](https://raw.githubusercontent.com/Keith-Tseng/YiSheng-Live/main/docs/live-translation.png)
+
+### 快速文字翻譯
+
+輸入文字後查看逐句翻譯，支援複製與朗讀。
+
+![快速文字翻譯介面示範](https://raw.githubusercontent.com/Keith-Tseng/YiSheng-Live/main/docs/quick-translation.png)
+
+圖片使用示範內容，實際介面以下載版本為準。
+
 ## 系統與空間準備
 
 - 本包是 **Windows x64** 執行版；不是 macOS、Linux 或 Windows ARM 原生版本。
