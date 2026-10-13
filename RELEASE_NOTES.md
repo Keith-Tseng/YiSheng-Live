@@ -11,6 +11,22 @@
 - 本機對話紀錄、搜尋、複製及 Word／TXT 匯出。
 - 可調整收音敏感度、模型與專業術語；選用 Azure 時需自行設定服務。
 
+## 操作介面
+
+### 即時雙語翻譯
+
+顯示原文與譯文，可選擇接收語言、音訊來源及透明字幕。
+
+![即時雙語翻譯介面示範](https://raw.githubusercontent.com/Keith-Tseng/YiSheng-Live/main/docs/live-translation.png)
+
+### 快速文字翻譯
+
+輸入文字後查看逐句翻譯，支援複製與朗讀。
+
+![快速文字翻譯介面示範](https://raw.githubusercontent.com/Keith-Tseng/YiSheng-Live/main/docs/quick-translation.png)
+
+圖片使用示範內容，實際介面以下載版本為準。
+
 ## 版本重點
 
 - 已包含停止聆聽後語言選單未解鎖的修正。切換語言前仍需先停止並等待處理、存檔完成。
