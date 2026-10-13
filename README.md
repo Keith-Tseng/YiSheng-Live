@@ -7,34 +7,6 @@
 
 **目前發布：0.7.24 乾淨分享版。**這個儲存庫提供執行版下載與使用說明，並未發布本專案完整原始碼。
 
-
-## 7-Zip 官方下載與解壓圖解
-
-**7-Zip 官方下載網址：[https://www.7-zip.org/download.html](https://www.7-zip.org/download.html)**  
-請選擇 **Windows x64 的 .exe 安裝程式**。
-
-**[下載完整操作說明（PDF）](https://github.com/Keith-Tseng/YiSheng-Live/releases/download/v0.7.24/USER_GUIDE.zh-TW.pdf)**
-
-下載 `.001`、`.002`、`.003` 三個檔案並放在同一資料夾。**只需對 `.001` 按右鍵 → 7-Zip → 解壓縮**，其餘兩卷會自動一起讀取，不用各別解壓。Windows 11 若沒看到 7-Zip，請先點「顯示其他選項」。
-
-![三個分卷放同一資料夾，從 .001 一次解壓完整程式](https://raw.githubusercontent.com/Keith-Tseng/YiSheng-Live/main/docs/extract-guide.png)
-
-
-## 下載程式
-
-前往 **[v0.7.24 Releases 下載頁](https://github.com/Keith-Tseng/YiSheng-Live/releases/tag/v0.7.24)**，展開 **Assets**，下載該版本的**全部分卷**。每卷小於 GitHub 的 2 GiB 限制。
-
-| 分卷 | 大小 |
-|---|---:|
-| [YiSheng-Live-0.7.24-Windows-x64.7z.001](https://github.com/Keith-Tseng/YiSheng-Live/releases/download/v0.7.24/YiSheng-Live-0.7.24-Windows-x64.7z.001) | 1.76 GiB |
-| [YiSheng-Live-0.7.24-Windows-x64.7z.002](https://github.com/Keith-Tseng/YiSheng-Live/releases/download/v0.7.24/YiSheng-Live-0.7.24-Windows-x64.7z.002) | 1.76 GiB |
-| [YiSheng-Live-0.7.24-Windows-x64.7z.003](https://github.com/Keith-Tseng/YiSheng-Live/releases/download/v0.7.24/YiSheng-Live-0.7.24-Windows-x64.7z.003) | 0.96 GiB |
-
-[下載 SHA256SUMS.txt](https://github.com/Keith-Tseng/YiSheng-Live/releases/download/v0.7.24/SHA256SUMS.txt) · [下載完整操作說明（PDF）](https://github.com/Keith-Tseng/YiSheng-Live/releases/download/v0.7.24/USER_GUIDE.zh-TW.pdf)
-
-
-> 不要使用綠色 Code 按鈕的 Download ZIP，也不要下載 Releases 自動附上的 Source code (zip/tar.gz) 當成程式。那些只包含此儲存庫的文件，沒有執行檔或模型。
-
 ## 系統與空間準備
 
 - 本包是 **Windows x64** 執行版；不是 macOS、Linux 或 Windows ARM 原生版本。
@@ -42,29 +14,6 @@
 - 建議至少預留 **20 GB 可用磁碟空間**，容納全部下載分卷、解壓後程式與使用資料。
 - 模型需要記憶體和運算時間。可用時會使用相容 GPU，否則走 CPU；速度因硬體、句長、模型及其他程式負載而異。尚未提供涵蓋各種硬體的效能保證。
 - 解壓縮請使用 [7-Zip 官方版本](https://www.7-zip.org/)。不需要用管理員權限執行譯聲 Live。
-
-## 分卷解壓縮：第一次使用請照這裡做
-
-1. 下載 Assets 裡全部 `YiSheng-Live-0.7.24-Windows-x64.7z.001`、`.002` 等檔案。
-2. 把它們放在**同一個資料夾**。不要更改檔名，不要混用不同版本的分卷。下載完成前不要開始解壓。
-3. 用 7-Zip 開啟 **`.7z.001` 第一卷**，選擇「解壓縮」，解壓至一般可寫入資料夾，例如 `D:\Apps\YiSheng-Live`。
-4. 7-Zip 會自動讀取其餘分卷；**不要分別解壓每一卷**。分卷本身不能獨立使用。
-5. 進入解壓後的 `譯聲 Live 0.7.24` 資料夾，雙擊 **`譯聲 Live.exe`**。
-6. 保留整個資料夾，包括 `resources`、`locales`、DLL 與授權文件。不要只搬移 EXE，也不要在壓縮檔裡直接執行。
-7. 初次啟動需載入／預熱模型，請等待狀態完成。若要桌面捷徑，請對這次解壓的 EXE 建立捷徑，避免開到舊版本。
-
-程式目前未提供程式碼簽章，Windows 可能顯示信任提示。遇到警示時請先確認下載來源與校驗碼；不需要關閉防毒或系統保護功能。
-
-## 驗證下載是否完整
-
-同時下載 `SHA256SUMS.txt`，在分卷所在資料夾開啟 PowerShell：
-
-```powershell
-Get-FileHash .\YiSheng-Live-0.7.24-Windows-x64.7z.* -Algorithm SHA256 |
-  Select-Object Hash, Path
-```
-
-逐一對照檔名與 SHA-256（英文大小寫不影響比對）。若不一致，重新下載該卷。也可以在 7-Zip 對第一卷執行「測試」；缺卷、損毀或尚未下載完畢時不要繼續使用。
 
 ## 第一次即時翻譯
 
@@ -161,3 +110,52 @@ Distil-Whisper Large v3.5 是英文專用選項，不適合中文辨識。中英
 Download **all** `YiSheng-Live-0.7.24-Windows-x64.7z.*` release assets into one folder. Open `.7z.001` with 7-Zip and extract the complete application. Run `譯聲 Live.exe` on Windows x64. Do not use GitHub's automatic **Source code** archives as the application download.
 
 Local mode performs speech recognition and translation on your computer. Chinese and bilingual modes use the multilingual Whisper small model. Stop listening and wait for processing to finish before switching languages. The share edition stores its own data in `%APPDATA%\YiShengLive-Share`; it does not automatically import the original edition's history. Optional Azure mode sends audio to Azure.
+
+## 下載程式
+
+前往 **[v0.7.24 Releases 下載頁](https://github.com/Keith-Tseng/YiSheng-Live/releases/tag/v0.7.24)**，展開 **Assets**，下載該版本的**全部分卷**。每卷小於 GitHub 的 2 GiB 限制。
+
+| 分卷 | 大小 |
+|---|---:|
+| [YiSheng-Live-0.7.24-Windows-x64.7z.001](https://github.com/Keith-Tseng/YiSheng-Live/releases/download/v0.7.24/YiSheng-Live-0.7.24-Windows-x64.7z.001) | 1.76 GiB |
+| [YiSheng-Live-0.7.24-Windows-x64.7z.002](https://github.com/Keith-Tseng/YiSheng-Live/releases/download/v0.7.24/YiSheng-Live-0.7.24-Windows-x64.7z.002) | 1.76 GiB |
+| [YiSheng-Live-0.7.24-Windows-x64.7z.003](https://github.com/Keith-Tseng/YiSheng-Live/releases/download/v0.7.24/YiSheng-Live-0.7.24-Windows-x64.7z.003) | 0.96 GiB |
+
+[下載 SHA256SUMS.txt](https://github.com/Keith-Tseng/YiSheng-Live/releases/download/v0.7.24/SHA256SUMS.txt)
+
+
+> 不要使用綠色 Code 按鈕的 Download ZIP，也不要下載 Releases 自動附上的 Source code (zip/tar.gz) 當成程式。那些只包含此儲存庫的文件，沒有執行檔或模型。
+
+## 分卷解壓縮：第一次使用請照這裡做
+
+1. 下載 Assets 裡全部 `YiSheng-Live-0.7.24-Windows-x64.7z.001`、`.002` 等檔案。
+2. 把它們放在**同一個資料夾**。不要更改檔名，不要混用不同版本的分卷。下載完成前不要開始解壓。
+3. 用 7-Zip 開啟 **`.7z.001` 第一卷**，選擇「解壓縮」，解壓至一般可寫入資料夾，例如 `D:\Apps\YiSheng-Live`。
+4. 7-Zip 會自動讀取其餘分卷；**不要分別解壓每一卷**。分卷本身不能獨立使用。
+5. 進入解壓後的 `譯聲 Live 0.7.24` 資料夾，雙擊 **`譯聲 Live.exe`**。
+6. 保留整個資料夾，包括 `resources`、`locales`、DLL 與授權文件。不要只搬移 EXE，也不要在壓縮檔裡直接執行。
+7. 初次啟動需載入／預熱模型，請等待狀態完成。若要桌面捷徑，請對這次解壓的 EXE 建立捷徑，避免開到舊版本。
+
+程式目前未提供程式碼簽章，Windows 可能顯示信任提示。遇到警示時請先確認下載來源與校驗碼；不需要關閉防毒或系統保護功能。
+
+## 驗證下載是否完整
+
+同時下載 `SHA256SUMS.txt`，在分卷所在資料夾開啟 PowerShell：
+
+```powershell
+Get-FileHash .\YiSheng-Live-0.7.24-Windows-x64.7z.* -Algorithm SHA256 |
+  Select-Object Hash, Path
+```
+
+逐一對照檔名與 SHA-256（英文大小寫不影響比對）。若不一致，重新下載該卷。也可以在 7-Zip 對第一卷執行「測試」；缺卷、損毀或尚未下載完畢時不要繼續使用。
+
+## 7-Zip 官方下載與解壓圖解
+
+**7-Zip 官方下載網址：[https://www.7-zip.org/download.html](https://www.7-zip.org/download.html)**  
+請選擇 **Windows x64 的 .exe 安裝程式**。
+
+下載 `.001`、`.002`、`.003` 三個檔案並放在同一資料夾。**只需對 `.001` 按右鍵 → 7-Zip → 解壓縮**，其餘兩卷會自動一起讀取，不用各別解壓。Windows 11 若沒看到 7-Zip，請先點「顯示其他選項」。
+
+![三個分卷放同一資料夾，從 .001 一次解壓完整程式](https://raw.githubusercontent.com/Keith-Tseng/YiSheng-Live/main/docs/extract-guide.png)
+
+**[下載完整操作說明（PDF）](https://github.com/Keith-Tseng/YiSheng-Live/releases/download/v0.7.24/USER_GUIDE.zh-TW.pdf)**
