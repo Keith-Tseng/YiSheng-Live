@@ -7,6 +7,19 @@
 
 **目前發布：0.7.24 乾淨分享版。**這個儲存庫提供執行版下載與使用說明，並未發布本專案完整原始碼。
 
+
+## 7-Zip 官方下載與解壓圖解
+
+**7-Zip 官方下載網址：[https://www.7-zip.org/download.html](https://www.7-zip.org/download.html)**  
+請選擇 **Windows x64 的 .exe 安裝程式**。
+
+**[下載完整操作說明（PDF）](https://github.com/Keith-Tseng/YiSheng-Live/releases/download/v0.7.24/USER_GUIDE.zh-TW.pdf)**
+
+下載 `.001`、`.002`、`.003` 三個檔案並放在同一資料夾。**只需對 `.001` 按右鍵 → 7-Zip → 解壓縮**，其餘兩卷會自動一起讀取，不用各別解壓。Windows 11 若沒看到 7-Zip，請先點「顯示其他選項」。
+
+![三個分卷放同一資料夾，從 .001 一次解壓完整程式](https://raw.githubusercontent.com/Keith-Tseng/YiSheng-Live/main/docs/extract-guide.png)
+
+
 ## 下載程式
 
 前往 **[v0.7.24 Releases 下載頁](https://github.com/Keith-Tseng/YiSheng-Live/releases/tag/v0.7.24)**，展開 **Assets**，下載該版本的**全部分卷**。每卷小於 GitHub 的 2 GiB 限制。
@@ -17,7 +30,7 @@
 | [YiSheng-Live-0.7.24-Windows-x64.7z.002](https://github.com/Keith-Tseng/YiSheng-Live/releases/download/v0.7.24/YiSheng-Live-0.7.24-Windows-x64.7z.002) | 1.76 GiB |
 | [YiSheng-Live-0.7.24-Windows-x64.7z.003](https://github.com/Keith-Tseng/YiSheng-Live/releases/download/v0.7.24/YiSheng-Live-0.7.24-Windows-x64.7z.003) | 0.96 GiB |
 
-[下載 SHA256SUMS.txt](https://github.com/Keith-Tseng/YiSheng-Live/releases/download/v0.7.24/SHA256SUMS.txt) · [下載完整操作說明](https://github.com/Keith-Tseng/YiSheng-Live/releases/download/v0.7.24/USER_GUIDE.zh-TW.md)
+[下載 SHA256SUMS.txt](https://github.com/Keith-Tseng/YiSheng-Live/releases/download/v0.7.24/SHA256SUMS.txt) · [下載完整操作說明（PDF）](https://github.com/Keith-Tseng/YiSheng-Live/releases/download/v0.7.24/USER_GUIDE.zh-TW.pdf)
 
 
 > 不要使用綠色 Code 按鈕的 Download ZIP，也不要下載 Releases 自動附上的 Source code (zip/tar.gz) 當成程式。那些只包含此儲存庫的文件，沒有執行檔或模型。
