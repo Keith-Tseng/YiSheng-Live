@@ -2,7 +2,7 @@
 
 譯聲 Live 是 Windows x64 桌面工具，提供麥克風／電腦音訊辨識、中英雙向翻譯、雙語逐句字幕、透明字幕、快速文字翻譯與本機對話紀錄。
 
-**作者：Keith Tseng**  
+作者：<span translate="no" class="notranslate">Keith Tseng</span>  
 [LinkedIn](https://www.linkedin.com/in/keith-tseng0721)
 
 **目前發布：0.7.24 乾淨分享版。**這個儲存庫提供執行版下載與使用說明，並未發布本專案完整原始碼。
